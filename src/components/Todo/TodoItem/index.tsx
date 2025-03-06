@@ -1,6 +1,10 @@
-const TodoItem: React.FC = () => {
+interface TodoItemProps {
+    title: string;
+}
+
+const TodoItem: React.FC<TodoItemProps> = (props) => {
     return (
-        <li>Code</li>
+        <li>{props.title}</li>
     )
 }
 
