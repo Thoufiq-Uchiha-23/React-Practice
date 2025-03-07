@@ -1,3 +1,4 @@
+import Counter from "../Counter"
 import TodoItem from "./TodoItem"
 
 interface ITodoItem {
@@ -27,6 +28,7 @@ const Todo: React.FC<TodoProps> = (props) => {
                 <TodoItem title="Sleep"/>
                 <TodoItem title="Repeat"/>
             </ol>
+            <Counter />
         </div>
     )
 }
